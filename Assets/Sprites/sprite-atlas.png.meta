@@ -124,7 +124,7 @@ TextureImporter:
     second: platform-s
   - first:
       213: 9179272126259092667
-    second: rock-4
+    second: floor
   - first:
       213: 7668746392148799563
     second: platform-l
@@ -1058,7 +1058,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rock-4
+      name: floor
       rect:
         serializedVersion: 2
         x: 1158

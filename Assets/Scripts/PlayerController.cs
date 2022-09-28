@@ -7,17 +7,24 @@ public class PlayerController : MonoBehaviour
     //variables de movimiento del personaje 
     public float jumpForce = 6f;
     Rigidbody2D rigidBody;
+    Animator animator;
+
+    const string STATE_ALIVE = "isAlive";
+    const string STATE_ON_THE_GROUND = "isOnTheGround";
 
     public LayerMask groundMask;
 
     void Awake()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        animator  = GetComponent<Animator>();
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator.SetBool(STATE_ALIVE, true);
+        animator.SetBool(STATE_ON_THE_GROUND, true);
+
     }
 
     // Update is called once per frame
@@ -27,6 +34,7 @@ public class PlayerController : MonoBehaviour
             Jump(); 
 
         }
+        animator.SetBool(STATE_ON_THE_GROUND, IsTouchingTheGround());
         Debug.DrawRay(this.transform.position, Vector2.down*1.5f, Color.red);
     }
     void Jump()
@@ -43,10 +51,12 @@ public class PlayerController : MonoBehaviour
             Vector2.down,
                 1.5f,
                 groundMask)){
-                //TODO: programar logica de contacto del suelo 
+            //TODO: programar logica de contacto del suelo 
+            animator.enabled = true;
                     return true;
                 }else{
-                //TODO: programar logica de no contacto 
+            //TODO: programar logica de no contacto 
+                    animator.enabled = false;
                     return false;
                 }
     }

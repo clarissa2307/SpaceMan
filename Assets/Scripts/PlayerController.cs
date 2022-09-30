@@ -60,7 +60,9 @@ public class PlayerController : MonoBehaviour
                 1.5f,
                 groundMask)){
             //TODO: programar logica de contacto del suelo 
+            
             animator.enabled = true;
+            GameManager.sharedInstance.currentGameState = GameState.inGame;
                     return true;
                 }else{
             //TODO: programar logica de no contacto 

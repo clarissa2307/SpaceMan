@@ -12,6 +12,17 @@ public enum GameState
 public class GameManager : MonoBehaviour
 {
     public GameState currentGameState = GameState.menu;
+
+    public static GameManager sharedInstance;
+
+    void Awake()
+    {
+        if(sharedInstance == null)
+        {
+            sharedInstance = this;
+        }
+        
+    }
     // Start is called before the first frame update
     void Start()
     {

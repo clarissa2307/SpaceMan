@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)){
+        if(Input.GetButtonDown("Jump")){
             Jump(); 
 
         }
@@ -40,9 +40,16 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (rigidBody.velocity.x < runningSpeed)
+        if (GameManager.sharedInstance.currentGameState == GameState.inGame)
         {
-            rigidBody.velocity = new Vector2(runningSpeed, rigidBody.velocity.y);
+            if (rigidBody.velocity.x < runningSpeed)
+            {
+                rigidBody.velocity = new Vector2(runningSpeed, rigidBody.velocity.y);
+            }
+        }
+        else// si no estamos dentro de la partida 
+        {
+            rigidBody.velocity = new Vector2(0, rigidBody.velocity.y);
         }
     }
     void Jump()
@@ -59,10 +66,10 @@ public class PlayerController : MonoBehaviour
             Vector2.down,
                 1.5f,
                 groundMask)){
-                    //animator.enabled = true;
+                    animator.enabled = true;
                     return true;
                 }else{
-                    //animator.enabled = false;
+                    animator.enabled = false;
                     return false;
                 }
     }

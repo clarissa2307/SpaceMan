@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     public static GameManager sharedInstance;
 
+    private PlayerController controller;
+
     void Awake()
     {
         if(sharedInstance == null)
@@ -26,7 +28,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        controller = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -59,6 +61,7 @@ public class GameManager : MonoBehaviour
         }else if(newGameSate == GameState.inGame)
         {
             //TODO: hay que preparar la escena para jugar 
+            controller.StartGame();
         }else if (newGameSate == GameState.gameOver)
         {
             //TODO: preparar el juego para el Gave Over

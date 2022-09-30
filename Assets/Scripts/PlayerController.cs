@@ -54,10 +54,13 @@ public class PlayerController : MonoBehaviour
     }
     void Jump()
     {
-        if(IsTouchingTheGround())
+        if (GameManager.sharedInstance.currentGameState == GameState.inGame)
         {
-            rigidBody.AddForce(Vector2.up*jumpForce, ForceMode2D.Impulse);
-        }
+            if (IsTouchingTheGround())
+            {
+                rigidBody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            }
+        } 
     }
 
     // Nos indica si el perosnaje esta tocando el suelo 

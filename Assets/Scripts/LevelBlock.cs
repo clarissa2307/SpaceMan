@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelBock : MonoBehaviour
+public class LevelBlock : MonoBehaviour
 {
     public Transform startPoint, exitPoint;
     // Start is called before the first frame update

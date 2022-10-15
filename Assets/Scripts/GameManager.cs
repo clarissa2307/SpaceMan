@@ -61,12 +61,16 @@ public class GameManager : MonoBehaviour
         }else if(newGameSate == GameState.inGame)
         {
             //TODO: hay que preparar la escena para jugar 
+            LevelManager.sharedInstance.RemoveAllLevelBlocks();
+            LevelManager.sharedInstance.GenerateInitialBlocks();
             controller.StartGame();
-        }else if (newGameSate == GameState.gameOver)
+        }
+        else if (newGameSate == GameState.gameOver)
         {
             //TODO: preparar el juego para el Gave Over
         }
         this.currentGameState = newGameSate;
     }
+    
 
 }

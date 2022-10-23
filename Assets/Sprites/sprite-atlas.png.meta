@@ -150,6 +150,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -204,6 +205,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1109,6 +1122,49 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      rock-1: -3532133655125953119
+      floor: 9179272126259092667
+      run-3: -3070488266922594726
+      run-2: 6882153906056439007
+      scenery: 4157115847226850640
+      jump-3: -6532936183452039368
+      coin-4: -2732776370844396811
+      platform-l: 7668746392148799563
+      coin-2: 475761587024849807
+      die-3: 3421206588688123152
+      jump-6: -3320761448351302060
+      sprite-atlas_17: -6507834598064329317
+      coin-6: 6524552276886044749
+      enemy-1: -1314051821937120660
+      sprite-atlas_9: 1215018767098533329
+      rock-2: 6691287902862017832
+      jump-4: 2251302966545850319
+      sprite-atlas_3: 7336388210466114642
+      rock-3: -7620621983777257372
+      potion: -2549273120127555650
+      coin-: 6722007544017516588
+      coin-3: 8213436168483836213
+      sprite-atlas_0: 6277152026664103443
+      platform-m: 2758995749061410447
+      die-1: -996285667201416337
+      die-2: 2285582841740712632
+      platform-s: -1210262882860465325
+      jump-1: -6723461406285876323
+      jump-2: -6168345510081062624
+      sprite-atlas_4: -5097647541260762619
+      run-1: 2690067164458890340
+      jump-5: -2044322936661462846
+      coin-5: -4449733889991448787
+      enemy-2: 5679897224089034818
+      sprite-atlas_8: -2724868996660943631
+      run-5: 7553590309420887193
+      enemy-3: -8478384153241947502
+      sprite-atlas_7: 4010302209748201286
+      run-4: 8380528411449912521
+      coin-1: 5730543314716996643
+      sprite-atlas_33: 5704764885748256050
+      sprite-atlas_6: -4669188699835424353
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

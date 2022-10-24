@@ -32,6 +32,7 @@ public class Collectable : MonoBehaviour
         sprite.enabled = false;
         iteamCollider.enabled = false;
     }
+   
     void Collect()
     {
         Hide();
@@ -39,10 +40,13 @@ public class Collectable : MonoBehaviour
         switch (this.type)
         {
             case CollectableType.money:
+                GameManager.sharedInstance.CollectObject(this);
                 break;
             case CollectableType.healthPotion:
+               
                 break;
             case CollectableType.manaPotion:
+                
                 break;
         }
     }

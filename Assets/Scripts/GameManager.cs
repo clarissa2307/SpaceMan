@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
 
     private PlayerController controller;
 
+    public int collectedObject = 0;
+
     void Awake()
     {
         if(sharedInstance == null)
@@ -75,5 +77,8 @@ public class GameManager : MonoBehaviour
         this.currentGameState = newGameSate;
     }
     
-
+    public void CollectObject(Collectable collectable)
+    {
+        collectedObject += collectable.value;
+    }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 94e84392a3857024da6f62ba576d7bfb
+guid: e099b9065d5830347b7e253507408b79
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,9 +9,8 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - The Wild Breath of Zelda
-  fallbackFontReferences:
-  - {fileID: 12800000, guid: 37bf6e88fbf0fc14d902be36b83443fc, type: 3}
+  - Super Mario 256
+  fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

@@ -777,7 +777,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: coin-1
+      name: coin
       rect:
         serializedVersion: 2
         x: 92
@@ -903,7 +903,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: coin-
+      name: coin-1
       rect:
         serializedVersion: 2
         x: 900
@@ -924,7 +924,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sprite-atlas_33
+      name: coin-7
       rect:
         serializedVersion: 2
         x: 1025
@@ -1124,7 +1124,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       rock-1: -3532133655125953119
-      floor: 9179272126259092667
+      coin-1: 6722007544017516588
       run-3: -3070488266922594726
       run-2: 6882153906056439007
       scenery: 4157115847226850640
@@ -1143,7 +1143,7 @@ TextureImporter:
       sprite-atlas_3: 7336388210466114642
       rock-3: -7620621983777257372
       potion: -2549273120127555650
-      coin-: 6722007544017516588
+      coin-7: 5704764885748256050
       coin-3: 8213436168483836213
       sprite-atlas_0: 6277152026664103443
       platform-m: 2758995749061410447
@@ -1154,16 +1154,16 @@ TextureImporter:
       jump-2: -6168345510081062624
       sprite-atlas_4: -5097647541260762619
       run-1: 2690067164458890340
+      coin: 5730543314716996643
       jump-5: -2044322936661462846
       coin-5: -4449733889991448787
       enemy-2: 5679897224089034818
       sprite-atlas_8: -2724868996660943631
       run-5: 7553590309420887193
       enemy-3: -8478384153241947502
+      floor: 9179272126259092667
       sprite-atlas_7: 4010302209748201286
       run-4: 8380528411449912521
-      coin-1: 5730543314716996643
-      sprite-atlas_33: 5704764885748256050
       sprite-atlas_6: -4669188699835424353
   spritePackingTag: 
   pSDRemoveMatte: 0

@@ -183,7 +183,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 6
-  runningSpeed: 3.5
+  runningSpeed: 3
+  healthPoints: 0
+  manaPoints: 0
+  jumpRaycastDistance: 2
   groundMask:
     serializedVersion: 2
     m_Bits: 64

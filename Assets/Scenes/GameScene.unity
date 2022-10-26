@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 6
-  runningSpeed: 2
+  runningSpeed: 3.5
   groundMask:
     serializedVersion: 2
     m_Bits: 64

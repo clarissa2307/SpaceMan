@@ -38,6 +38,7 @@ public class Enemy : MonoBehaviour
         }
         if (GameManager.sharedInstance.currentGameState == GameState.inGame)
         {
+            GetComponent<AudioSource>().Play();
             rigidBody.velocity = new Vector2(currentRunningSpeed, rigidBody.velocity.y);
         }
     }

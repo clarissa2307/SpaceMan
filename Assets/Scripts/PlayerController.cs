@@ -101,6 +101,7 @@ public class PlayerController : MonoBehaviour
         {
             if (IsTouchingTheGround())
             {
+                GetComponent<AudioSource>().Play();
                 rigidBody.AddForce(Vector2.up * jumpForceFactor, ForceMode2D.Impulse);
             }
         } 
@@ -125,6 +126,7 @@ public class PlayerController : MonoBehaviour
         float previousMaxDistance = PlayerPrefs.GetFloat("maxscore");
         if (travelledDistance > previousMaxDistance)
         {
+            GetComponent<AudioSource>().Play();
             PlayerPrefs.SetFloat("maxscore", travelledDistance);
         }
         this.animator.SetBool(STATE_ALIVE, false);
